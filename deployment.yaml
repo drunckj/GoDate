@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: godate
+  name: godate
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: godate
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: godate
+    spec:
+      containers:
+      - image: drunkcj/godate
+        name: godate
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
