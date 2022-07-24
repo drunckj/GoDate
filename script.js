@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("Hrs").innerHTML=addhead(hrs);
         document.getElementById("timeofday").innerHTML="PM";
         }
+        else if(hrs===12)
+        {
+            document.getElementById("Hrs").innerHTML=addhead(hrs);
+            document.getElementById("timeofday").innerHTML="PM";
+        }
         else{
             document.getElementById("Hrs").innerHTML=addhead(hrs);
             document.getElementById("timeofday").innerHTML="AM";
