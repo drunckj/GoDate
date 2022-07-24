@@ -8,9 +8,7 @@ name: Publish Docker image
 on:
   push:
     branches: [master]
-    tags: |
-            # set latest tag for master branch
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+    tags: type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
 
 
 jobs:
