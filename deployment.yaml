@@ -21,6 +21,6 @@ spec:
       - image: drunkcj/godate
         name: godate
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources: {}
 status: {}

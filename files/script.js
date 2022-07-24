@@ -31,6 +31,11 @@ function time(){
         document.getElementById("Hrs").innerHTML=addhead(hrs);
     document.getElementById("timeofday").innerHTML="PM";
     }
+    else{
+        document.getElementById("Hrs").innerHTML=addhead(hrs);
+        document.getElementById("timeofday").innerHTML="AM";
+    }
+
         //adding head zero if single digit mintues and seconds
     document.getElementById("Mns").innerHTML=addhead(mns);
     document.getElementById("sec").innerHTML=addhead(sec);
