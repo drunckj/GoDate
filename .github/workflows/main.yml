@@ -8,6 +8,9 @@ name: Publish Docker image
 on:
   push:
     branches: [master]
+    tags :
+          "drunkcj/godate:latest"
+
 
 jobs:
   push_to_registries:
