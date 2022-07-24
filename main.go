@@ -1,5 +1,6 @@
 package main
 
+//using os library for getting port from env
 import (
 	"fmt"
 	"log"
