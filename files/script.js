@@ -25,7 +25,7 @@ function time(){
     var mns=time.getMinutes()
     var sec=time.getSeconds()
     // Check if time is in PM 
-    if( hrs >=12){
+    if( hrs >12){
         hrs=hrs-12;
         //adding head zero if single digit hrs
         document.getElementById("Hrs").innerHTML=addhead(hrs);
